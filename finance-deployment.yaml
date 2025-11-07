@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: finance-service
-        image: <ECR_URL>/finance-service:latest
+        image: 469511944493.dkr.ecr.us-east-1.amazonaws.com/finance-service:latest
         ports:
         - containerPort: 6100
 ---
