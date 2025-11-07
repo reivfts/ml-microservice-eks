@@ -45,8 +45,8 @@ pipeline {
       steps {
         sh '''
           echo "Deploying to EKS..."
-          kubectl set image deployment/deployment ${SERVICE_NAME}=${IMAGE_REPO}:${SHORT_SHA} -n default
-          kubectl rollout status deployment/deployment -n default
+          kubectl set image deployment/car-value-service car-value-service=${IMAGE_REPO}:${SHORT_SHA} -n default
+          kubectl rollout status deployment/car-value-service -n default
         '''
       }
     }
