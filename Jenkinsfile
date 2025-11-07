@@ -1,6 +1,6 @@
 pipeline {
   agent any
-
+  {
   environment 
     SERVICE_NAME = "billing-service"
     AWS_REGION   = "us-east-1"
