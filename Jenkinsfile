@@ -47,8 +47,8 @@ pipeline {
     stage('Deploy to EKS') {
       steps {
         sh '''
-          kubectl set image deployment/api-gateway api-gateway=${IMAGE_REPO}:${SHORT_SHA} -n default
-          kubectl rollout status deployment/${SERVICE_NAME} -n default
+        kubectl set image deployment/api-gateway api-gateway=${IMAGE_REPO}:${SHORT_SHA} -n default
+        kubectl rollout status deployment/api-gateway -n default
         '''
       }
     }
