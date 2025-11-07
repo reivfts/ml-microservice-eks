@@ -1,7 +1,7 @@
 pipeline {
   agent any
-  {
-  environment 
+  
+  environment {
     SERVICE_NAME = "billing-service"
     AWS_REGION   = "us-east-1"
     ACCOUNT_ID   = "469511944493"
